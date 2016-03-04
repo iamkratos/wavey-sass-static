@@ -1,14 +1,32 @@
 {
- "name": "my-projects",
- "version": "1.0.0",
- "description": "A project to teach people how to grunt",
- "author":"Daine Mawer",
- "devDependencies": {
-   "grunt": "~0.4.5",
-   "grunt-contrib-watch": "~0.6.1",
-   "grunt-contrib-sass": "~0.8.1",
-   "grunt-contrib-concat": "~0.5.0",
-   "grunt-contrib-cssmin": "~0.10.0",
-   "grunt-contrib-uglify": "~0.6.0"
- }
- }
+  "name": "html5-boilerplate-grunt",
+  "version": "1.0.0",
+  "description": "A grunt integrated HTML5 Boilerplate",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-uglify": "~0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaineMawer/grunt-html5-boiler.git"
+  },
+  "keywords": [
+    "grunt",
+    "html5",
+    "front-end"
+  ],
+  "author": "Daine Mawer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaineMawer/grunt-html5-boiler/issues"
+  },
+  "homepage": "https://github.com/DaineMawer/grunt-html5-boiler#readme"
+}

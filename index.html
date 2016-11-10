@@ -3,17 +3,39 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Atlas</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran|Open+Sans:400,400i,700" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+        <!-- Normalize -->
         <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- Custom -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Modernizer -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -21,12 +43,472 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- nav -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="primary-nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                  
+                <svg width="98px" height="27px" viewBox="128 29 98 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="logo-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(128.000000, 29.000000)">
+                        <path d="M10.5908769,27 L6.08060872,16.3870393 L1.42349342,16.4006844 L1.41966841,16.4006844 C0.637038213,16.4006844 0.00192033995,15.7599531 7.83522659e-06,14.9665985 C-0.00256988853,14.17257 0.631217546,13.5266164 1.41576024,13.5246791 L7.94729648,13.505896 L10.4613255,19.4221535 L17.9428777,0 L25.0062565,15.3096639 L27.3533988,11.2322978 C27.7472916,10.5454089 28.6164834,10.315379 29.2951731,10.7143726 C29.9725324,11.1146297 30.201534,11.9950773 29.8063939,12.6812924 L24.7278624,21.5008454 L18.1777,7.30233284 L10.5908769,27 Z" id="Icon" fill="#FC2E49"></path>
+                        <g id="Typography" transform="translate(34.000000, 1.000000)" fill="#FFFFFF">
+                            <path d="M9.14475456,22.6264289 C8.09598309,23.0624096 6.7680465,23.0624096 5.71927503,22.6264289 C5.19357886,22.4078116 4.73120634,22.1034193 4.34576909,21.7221974 C3.95897913,21.3398051 3.6511535,20.8870206 3.42939392,20.3762167 C3.21025522,19.8692585 3.0986568,19.3062875 3.0986568,18.7019338 C3.0986568,18.0982489 3.21025522,17.5352778 3.42939392,17.0283196 C3.64980079,16.5201074 3.95635826,16.0737601 4.33985099,15.7035736 C4.72731731,15.3302103 5.19104254,15.0296637 5.71927503,14.8097087 C6.24370304,14.5917601 6.8202103,14.4808212 7.43205707,14.4808212 C8.04381929,14.4808212 8.6204111,14.5917601 9.14475456,14.8097087 C9.67045073,15.028326 10.1329078,15.3328019 10.518345,15.7139402 C10.9050505,16.0964161 11.2129606,16.549117 11.4347202,17.0599209 C11.6538589,17.5668791 11.7653728,18.1195672 11.7653728,18.7019338 C11.7653728,19.3062875 11.6538589,19.8692585 11.4347202,20.3762167 C11.2129606,20.8870206 10.9050505,21.3398051 10.518345,21.7221974 C10.1329078,22.1034193 9.67045073,22.4078116 9.14475456,22.6264289 M14.1961892,11.7333486 L12.5611033,11.7333486 C12.2050029,11.7333486 11.9107889,12.0099852 11.8938801,12.3621138 L11.8560042,13.1392714 C11.6062605,12.9084482 11.3270954,12.6917537 11.0218061,12.4924482 C10.5352539,12.1750977 9.97565548,11.9191106 9.35932787,11.7307569 C7.85925918,11.2747955 6.02059075,11.3747826 4.50488137,12.0261203 C3.61784306,12.4072585 2.82997517,12.9406347 2.16275192,13.6107826 C1.49882589,14.2795929 0.967211625,15.0677023 0.583127081,15.9538759 C0.19633712,16.845818 2.53632761e-05,17.8028855 2.53632761e-05,18.7974064 C2.53632761e-05,19.770609 0.190419022,20.705773 0.566133686,21.5764804 C0.939227477,22.4420045 1.45511651,23.2087955 2.09816011,23.8563711 C2.74450092,24.5077087 3.52847979,25.0308019 4.4279461,25.4112714 C5.32994875,25.7937473 6.31937015,25.9878695 7.36814161,25.9878695 C8.08879683,25.9878695 8.76582721,25.8995029 9.3802103,25.7247762 C9.99391704,25.5492971 10.5535155,25.3048469 11.0440412,24.9972778 C11.3048602,24.8340881 11.5455577,24.6592778 11.7653728,24.4761074 L11.7653728,25.0740238 C11.7653728,25.439027 12.0640676,25.7343904 12.4332724,25.7343904 L14.1961892,25.7343904 C14.5653094,25.7343904 14.8640888,25.439027 14.8640888,25.0740238 L14.8640888,12.3937151 C14.8640888,12.0287119 14.5653094,11.7333486 14.1961892,11.7333486" id="Fill-1"></path>
+                            <path d="M29.4339551,11.8603891 L24.9512497,11.8603891 L24.9512497,0.744009646 C24.9512497,0.37892283 24.6525548,0.0835594855 24.2833501,0.0835594855 L22.5204333,0.0835594855 C22.1513131,0.0835594855 21.8525337,0.37892283 21.8525337,0.744009646 L21.8525337,11.8603891 L17.2844386,11.8603891 C16.9153184,11.8603891 16.616539,12.1557524 16.616539,12.5208392 L16.616539,14.105418 C16.616539,14.4705048 16.9153184,14.7658682 17.2844386,14.7658682 L21.8525337,14.7658682 L21.8525337,25.0739904 C21.8525337,25.4389936 22.1513131,25.7344405 22.5204333,25.7344405 L24.2833501,25.7344405 C24.6525548,25.7344405 24.9512497,25.4389936 24.9512497,25.0739904 L24.9512497,14.7658682 L29.4339551,14.7658682 C29.8030753,14.7658682 30.1018547,14.4705048 30.1018547,14.105418 L30.1018547,12.5208392 C30.1018547,12.1557524 29.8030753,11.8603891 29.4339551,11.8603891" id="Fill-3"></path>
+                            <path d="M34.124707,0.131446302 L32.3617902,0.131446302 C31.9925855,0.131446302 31.6938906,0.426809646 31.6938906,0.791896463 L31.6938906,25.0739736 C31.6938906,25.4390605 31.9925855,25.7344238 32.3617902,25.7344238 L34.124707,25.7344238 C34.4938272,25.7344238 34.7926066,25.4390605 34.7926066,25.0739736 L34.7926066,0.791896463 C34.7926066,0.426809646 34.4938272,0.131446302 34.124707,0.131446302" id="Fill-6"></path>
+                            <path d="M46.3629273,22.6264289 C45.3141559,23.0624096 43.9862193,23.0624096 42.9374478,22.6264289 C42.4117517,22.4078116 41.9493791,22.1034193 41.5639419,21.7221974 C41.1771519,21.3398051 40.8693263,20.8870206 40.6475667,20.3762167 C40.428428,19.8692585 40.3168296,19.3062875 40.3168296,18.7019338 C40.3168296,18.0982489 40.428428,17.5352778 40.6475667,17.0283196 C40.8679736,16.5201074 41.174531,16.0737601 41.5580238,15.7035736 C41.9454901,15.3302103 42.4092153,15.0296637 42.9374478,14.8097087 C43.4618758,14.5917601 44.0383831,14.4808212 44.6502299,14.4808212 C45.2619921,14.4808212 45.8385839,14.5917601 46.3629273,14.8097087 C46.8886235,15.028326 47.3510806,15.3328019 47.7365178,15.7139402 C48.1232232,16.0964161 48.4311334,16.549117 48.652893,17.0599209 C48.8720317,17.5668791 48.9835456,18.1195672 48.9835456,18.7019338 C48.9835456,19.3062875 48.8720317,19.8692585 48.652893,20.3762167 C48.4311334,20.8870206 48.1232232,21.3398051 47.7365178,21.7221974 C47.3510806,22.1034193 46.8886235,22.4078116 46.3629273,22.6264289 M51.414362,11.7333486 L49.7792761,11.7333486 C49.4231757,11.7333486 49.1289617,12.0099852 49.1120528,12.3621138 L49.074177,13.1392714 C48.8244333,12.9084482 48.5452682,12.6917537 48.2399789,12.4924482 C47.7534267,12.1750977 47.1938283,11.9191106 46.5775007,11.7307569 C45.0780238,11.2747955 43.2394399,11.3747826 41.7230542,12.0261203 C40.8360159,12.4072585 40.048148,12.9406347 39.3809247,13.6107826 C38.7169987,14.2795929 38.1853844,15.0677023 37.8012999,15.9538759 C37.4145099,16.845818 37.2181982,17.8028855 37.2181982,18.7974064 C37.2181982,19.770609 37.4085918,20.705773 37.7843065,21.5764804 C38.1574003,22.4420045 38.6732893,23.2087955 39.3163329,23.8563711 C39.9626737,24.5077087 40.7466526,25.0308019 41.6461189,25.4112714 C42.5481215,25.7937473 43.5375429,25.9878695 44.5863144,25.9878695 C45.3069696,25.9878695 45.984,25.8995029 46.5983831,25.7247762 C47.2120898,25.5492971 47.7716882,25.3048469 48.262214,24.9972778 C48.523033,24.8340881 48.7637305,24.6592778 48.9835456,24.4761074 L48.9835456,25.0740238 C48.9835456,25.439027 49.2822404,25.7343904 49.6514452,25.7343904 L51.414362,25.7343904 C51.7834822,25.7343904 52.0822616,25.439027 52.0822616,25.0740238 L52.0822616,12.3937151 C52.0822616,12.0287119 51.7834822,11.7333486 51.414362,11.7333486" id="Fill-8"></path>
+                            <path d="M63.421041,19.5184508 C63.0695059,19.0102386 62.6247186,18.5890553 62.0983461,18.267274 C61.6124703,17.970573 61.0815324,17.7165087 60.5193131,17.5120199 C60.0151757,17.3288495 59.5488296,17.1366502 59.1170621,16.9328302 C58.736782,16.7542579 58.4191493,16.5445859 58.1720264,16.3092482 C58.0670225,16.2092611 57.9274399,16.0292675 57.9274399,15.6274797 C57.9274399,15.4359492 57.963963,15.2812032 58.0356565,15.166335 C58.1256962,15.0225408 58.2307001,14.9109331 58.358531,14.8251582 C58.49879,14.7297691 58.650716,14.6620521 58.8242008,14.6174926 C59.5207609,14.434991 60.0399472,14.5672482 60.6151863,14.7968174 C61.1500132,15.0109203 61.3026156,15.1786244 61.3365178,15.2244379 C61.4604597,15.3921421 61.6574478,15.4927145 61.8674557,15.4953061 C62.1231176,15.4882 62.2770727,15.4017563 62.4054954,15.2373125 L63.3669326,14.0009331 C63.5710225,13.7378399 63.5469273,13.3657305 63.3095271,13.1308945 C62.7492523,12.5782064 62.0832972,12.1635441 61.3294161,11.8984444 C60.0281955,11.4418141 58.9461982,11.4005151 57.7689194,11.7262257 C57.2242853,11.8765408 56.7292787,12.1248367 56.2987794,12.4634219 C55.8650674,12.8039299 55.5050779,13.2353961 55.2285337,13.7455312 C54.9415905,14.2738077 54.7960898,14.917454 54.7960898,15.659081 C54.7960898,16.4872354 54.9852153,17.1863093 55.3576328,17.7364894 C55.708576,18.2589138 56.1553078,18.6871196 56.6836248,19.0102386 C57.1754188,19.3107852 57.7173474,19.5616727 58.2946156,19.755126 C58.802642,19.9266759 59.2749062,20.1143608 59.6968666,20.3124122 C60.0784148,20.4923222 60.3967239,20.7025794 60.6425786,20.936663 C60.7475826,21.0366502 60.8871651,21.2165601 60.8871651,21.6183479 C60.8871651,21.8576984 60.8421876,22.0549974 60.7535007,22.2053125 C60.6530621,22.3761936 60.5232021,22.5148881 60.3556354,22.6303415 C60.174288,22.755409 59.9825416,22.8425215 59.7679683,22.8972804 C59.2592655,23.0282 58.8405178,23.0095569 58.3611519,22.8831518 C58.0721797,22.8064058 57.8021453,22.7161164 57.5517252,22.6116148 C57.3058705,22.509036 57.088,22.4013576 56.89693,22.287827 C56.7429749,22.1975376 56.709749,22.1588302 56.7083963,22.1640135 C56.5877517,21.9666309 56.3712338,21.8460778 56.1377226,21.8460778 C55.778325,21.8460778 55.5748269,22.1046566 55.4672021,22.2420135 L54.8606816,22.9644122 C54.7465469,23.0965859 54.6513501,23.2004186 54.5750066,23.2759106 C54.3291519,23.5190232 54.3128349,23.9072675 54.5372153,24.1691068 C55.0850621,24.8095762 55.8051255,25.2816727 56.6764386,25.5725215 C57.4988851,25.8479042 58.3206552,25.9878527 59.1190066,25.9878527 C60.6445231,25.9878527 61.8504624,25.5537949 62.7048666,24.6973833 C63.5553818,23.8428109 63.9864729,22.7857563 63.9864729,21.5551453 C63.9864729,20.7477241 63.7967556,20.0627788 63.421041,19.5184508" id="Fill-10"></path>
+                        </g>
+                    </g>
+                </svg>
+
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><br>Contact Us</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- banner -->
+
+        <section id="banner">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <h1>Patient payments made simple</h1>
+                        <h4>Improve revenue, cash flows, and operations</h4>
+                        <div class="banner-btn-wrap">
+                            <a href="#" data-toggle="modal" data-target="#myModal2" class="red-btn">Request Beta Invite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logo-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center logos">
+                        <a href="#" id="LT1"><img data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Patient collections is the lastest cause of practice administators' sleepless nights." src="img/mgma.png" alt="MGMA" class="img-responsive"></a>
+                        <a href="#" id="LT2"><img data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Providers that don't collect a significantly higher percentage of payments from their patients risk financial failure." src="img/hfma.gif" alt="HFMA" class="img-responsive"></a>
+                        <a href="#" id="LT3"><img data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Physician practices who convenient, seamless billing collect more of their patients' bills and collect them faster." src="img/pwc.png" alt="PWC" class="img-responsive"></a>
+                        <a href="#" id="LT4"><img data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="73% of people younger than 66 want to pay their healthcare bills electronically, but only 10% do today." src="img/citi.png" alt="Citi" class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="benefits">
+            <div class="container">
+                <h2 class="text-center">A better experience for everyone</h2>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                    <h3>Providers</h3>
+                        <img src="img/doctor.png" alt="" class="img-resposnive">
+                        <div class="benefit-list-wrap">
+                            <ul class="benefit-list" id="list-1">
+                                <li><img src="img/Increase.png" alt="" class="img-responsive"> Increase Net Patient Revenue</li>
+                                <li><img src="img/reduce.png" alt="" class="img-responsive"> Reduce Cost</li>
+                                <li><img src="img/reduce-days.png" alt="" class="img-responsive"> Reduce Open AR Days</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                    <h3>Office Managers</h3>
+                        <img src="img/hr.png" alt="HR" class="img-resposnive">
+                        <div class="benefit-list-wrap">
+                            <ul class="benefit-list" id="list-1">
+                                <li><img src="img/Stress.png" alt="" class="img-responsive"> Less Stress</li>
+                                <li><img src="img/reduce-work.png" alt="" class="img-responsive"> Reduce Reconciliation Work</li>
+                                <li><img src="img/reduce-call.png" alt="" class="img-responsive"> Reduce Call Volume</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                    <h3>Patients</h3>
+                        <img src="img/businessman.png" alt="" class="img-resposnive">
+                        <div class="benefit-list-wrap">
+                            <ul class="benefit-list" id="list-1">
+                                <li><img src="img/convenience.png" alt="" class="img-responsive"> Convenience</li>
+                                <li><img src="img/Trust.png" alt="" class="img-responsive"> Trust</li>
+                                <li><img src="img/save-money.png" alt="" class="img-resposnive">Savings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-row-1" class="content-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+  
+                            <div class="col-sm-6">
+                                <h3>Simple billing for quick turnaround payments</h3>
+                                <p>With Atlas patients are alerted they have a bill via text message and email, and can pay directly from their phone in two taps.</p>
+                                <p class="small-label">Current Problem</p>
+                                <p class="small">
+                                    Patients don't want paper bills in the mail. They want to pay the same way they do everything else: online or on their phone. Even if a patient opts for paper billing, they often look like junk mail and get tossed aside.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 content-img-wrap">
+
+
+                                <img src="img/test1.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-row-2" class="content-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                            <div class="col-sm-6 text-center content-img-wrap">
+                                <img src="img/content2.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Incentivize payment with timed discounts</h3>
+                                <p>Atlas  enables providers to offer prompt-pay discounts to encourage and incentivize patients to "pay now.”  Studies have shown this tactic dramatically increases revenue and cash flow.</p>
+                                <p class="small-label">Current Problem</p>
+                                <p class="small">
+                                    There's no direct penalty for not paying a medical bill – only a potential ding against one's credit score six months down the road. Without penalties or incentives, patients' don't feel any urgency to pay their bills on time.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="content-row-3" class="content-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                            
+                            <div class="col-sm-6 text-col">
+                                <h3>More comfort with payment installment options</h3>
+                                <p>Atlas allows providers to offer patient payment plans that automatically deduct cash from the patient's bank account on a monthly basis until the bill is paid in full. For certain bills and patients this is the only way to recover payment.</p>
+                                <p class="small-label">Current Problem</p>
+                                <p class="small">
+                                    Sometimes patients simply don't have the money to pay the bill in full. As a result, they don't pay anything.
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6 text-center content-img-wrap">
+                                <img src="img/content3.png" alt="" class="img-responsive">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-row-4" class="content-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+
+                            <div class="col-sm-6 text-center content-img-wrap">
+                                <img src="img/content4.png" alt="" class="img-responsive">
+                            </div>
+                            
+                            <div class="col-sm-6 text-col">
+                                <h3>Peace of mind with bill verification</h3>
+                                <p>Atlas’ error scanning technology is applied to every bill before it reaches the patient's phone and inbox, giving them peace of mind that the bill is verified and ready to be paid.</p>
+                                <p class="small-label">Current Problem</p>
+                                <p class="small">
+                                    Medical bills often contain mistakes due to incorrect patient information, insurance coverage issues, and coding complexity. As a result, patients are afraid to pay.
+                                </p>
+                            </div>
+
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="content-row-5" class="content-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+
+                            
+                            
+                            <div class="col-sm-6 text-col">
+                                <h3>All day support for any outstanding questions</h3>
+                                <p>Atlas’ chatbot AI technology offers 24/7 in-app chat support to resolve questions in real time so patients can pay and go about their day.</p>
+                                <p class="small-label">Current Problem</p>
+                                <p class="small">
+                                    Many times Patients often have questions about their bill but don't have the time or desire to call for help.
+                                </p>
+                            </div>
+
+                            <div class="col-sm-6 text-center content-img-wrap">
+                                <img src="img/content6.png" alt="" class="img-responsive">
+                            </div>
+
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="content-row-6" class="content-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+
+                            <div class="col-sm-6 text-center content-img-wrap">
+                                <img src="img/content7.png" alt="" class="img-responsive">
+                            </div>
+                            
+                            <div class="col-sm-6 text-col">
+                                <h3>Secure account linking</h3>
+                                <p>Patients don't like sending checks in the mail or sharing their private information with a random website just to make a one-time payment.</p>
+                                <p class="small-label">Current Problem</p>
+                                <p class="small">
+                                    Patients don't like sending checks in the mail or sharing their private information with a random website just to make a one-time payment.
+                                </p>
+                            </div>
+
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- Phone Slider -->
+
+        <!-- <section id="phone-slider">
+            <div class="container-fluid">
+            <h2 class="text-center">Enable and Motivate Payments</h2>
+                <div class="row desktop-only">
+                    <div class="col-sm-12 phone-bg">
+                        <div class="slick-phone-slider">
+                            <div id="S2"><img src="img/sign-in.png" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="No accounts / passwords required, only phone numbers"></div>
+                            <div id="S3"><img src="img/bills.png" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="All bills are verified as error free before they reach patients"  alt="" class="img-responsive"></div>
+                            <div id="S35"><img src="img/error-scanning.png" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Incentivize patients to pay now with prompt-pay discounts"  alt="" class="img-responsive"></div>
+                            <div id="S4"><img src="img/pay.png" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Convenient two tap payments"  alt="" class="img-responsive"></div>
+                            <div id="S5"><img src="img/account.png" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Promote HSA to help patients save"  alt="" class="img-responsive"></div>
+
+                        </div>
+                        <div class="phone-prev"><i class="fa fa-angle-left"></i></div>
+                        <div class="phone-next"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row mobile-only">
+                    <img src="img/mobile-phone.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </section> -->
+
+
+    
+
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="col-sm-3">
+                                <img src="img/test-3.jpg" alt="" class="img-responsive circle">
+                            </div>
+                            <div class="col-sm-9">
+                                <p>“I owe some collection companies money for medical bills, and it's not because I didn't want to or couldn't pay them. It just wasn't convenient” - Ezra (Patient)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="img/kathy.jpg" alt="" class="img-responsive circle">
+                            </div>
+                            <div class="col-sm-9">
+                                <p>“Reconciling payments and dealing with collections is the worst part of the job"<br> - Kathy (Office Manager)</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                              <div class="col-sm-3">
+                                    <img src="img/provider.jpg" alt="" class="img-responsive circle">
+                                </div>
+                            <div class="col-sm-9">
+                                <p>“Collecting more and collecting faster would be a huge benefit to our practice"<br> - Steve M. (Provider)</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+          <div class="container">
+            <p class="text-muted">&copy; 2016 Atlas. All rights reserved.</p>
+          </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title text-center">Please Contact Me</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="containter">
+                            <div class="row">
+                                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+                                            <div class="col-lg-8">
+                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputPhone" class="col-lg-4 control-label">Phone</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="phone" id="phone" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputName" class="col-lg-4 control-label">Organization</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="organization" id="organization">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputRole" class="col-lg-4 control-label">Role</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="role" id="role">
+                                            </div>
+                                        </div>
+                                        
+                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div><!-- End of Modal body -->
+                </div><!-- End of Modal content -->
+          </div>
+        </div>
+
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title text-center"><b>Request Beta Access</b></h4><br>
+                        <p> I am interested in using Atlas to enable and motivate my patients to pay their medical bills. I understand this will likely increase my revenue and cash flow, reduce stress and free up time for my staff, and provide convenience and savings to my patients.<br><br> 
+
+I understand that implementation will be free of charge and require no material IT integration, however for payments made via Atlas there will be a small transaction fee equal to or less than the fee I currently pay other vendors for collecting patient payments.<br><br>
+
+I understand a representative from Atlas will contact me regarding next steps.
+</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="containter">
+                            <div class="row">
+                                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label for="InputName" class="col-lg-4 control-label">Name</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="first_name" id="first_name"  required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputEmail" class="col-lg-4 control-label">Email</label>
+                                            <div class="col-lg-8">
+                                                <input type="email" class="form-control" id="email" name="email"  required  >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputPhone" class="col-lg-4 control-label">Phone</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="phone" id="phone" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputName" class="col-lg-4 control-label">Organization</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="organization" id="organization">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputRole" class="col-lg-4 control-label">Role</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="role" id="role">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputProviders" class="col-lg-4 control-label"># of Providers</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="providers" id="providers">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="InputPatients" class="col-lg-4 control-label"># of Patients</label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" name="patients" id="patients">
+                                            </div>
+                                        </div>
+                                        
+                                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div><!-- End of Modal body -->
+                </div><!-- End of Modal content -->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
